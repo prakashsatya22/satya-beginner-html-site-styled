@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: satya-deployment1
 spec:
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels:
       app: satya-deployment1
