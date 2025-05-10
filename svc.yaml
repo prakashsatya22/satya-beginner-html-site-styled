@@ -4,7 +4,7 @@ metadata:
   name: my-service
 spec:
   selector:
-    kubectl patch svc my-service -p "{"spec":{"selector":{"app":"satya-deployment1"}}}"
+    app.kubernetes.io/name: satya-deployment1
   ports:
     - protocol: TCP
       port: 80
