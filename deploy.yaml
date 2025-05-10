@@ -3,14 +3,17 @@ kind: Deployment
 metadata:
   name: satya-deployment1
 spec:
-  replicas: 5
+  replicas: 1
+  selector:
+    matchLabels:
+      app: satya-deployment1
   template:
     metadata:
       labels:
         app: satya-deployment1
     spec:
       containers:
-      - name: satya-deployment1
+      - name: satya-container
         image: prakashsatya22/project3:latest
         ports:
         - containerPort: 80
