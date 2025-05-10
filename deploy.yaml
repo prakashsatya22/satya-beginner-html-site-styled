@@ -10,7 +10,7 @@ spec:
         app: satya-deployment1
     spec:
       containers:
-      - name: satya-container
+      - name: satya-deployment1
         image: prakashsatya22/project3:latest
         ports:
         - containerPort: 80
