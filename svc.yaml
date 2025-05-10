@@ -3,10 +3,11 @@ kind: Service
 metadata:
   name: my-service
 spec:
-  type: NodePort
   selector:
     app.kubernetes.io/name: satya-deployment1
   ports:
-    - port: 80
+    - protocol: TCP
+      port: 80
       targetPort: 80
       nodePort: 30010
+  type: NodePort
